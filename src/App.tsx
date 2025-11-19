@@ -12,6 +12,7 @@ import Hospital from './pages/Hospital';
 import Gallery from './pages/Gallery';
 import Team from './pages/Team';
 import DigitalMarketing from './pages/DigitalMarketing';
+import PoliticalCampaigns from './pages/PoliticalCampaigns';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,8 +43,9 @@ function App() {
             <Route path="/school" element={<School />} />
             <Route path="/hospital" element={<Hospital />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/political-campaigns" element={<PoliticalCampaigns />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/digital-marketing" element={<DigitalMarketing />} />
           </Routes>
         </main>
         <Footer />

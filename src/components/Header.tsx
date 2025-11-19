@@ -62,16 +62,28 @@ const Header: React.FC = () => {
                 <Link to="/hospital" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
                   Hospital Uniforms
                 </Link>
+                <Link to="/political-campaigns" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
+                  Political Campaigns
+                </Link>
               </div>
             </div>
             <Link 
               to="/gallery" 
-              className={`font-medium transition-colors ${
-                isActive('/gallery') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
+              className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive('/gallery') ? 'bg-white text-orange-600' : 'text-white hover:bg-white hover:bg-opacity-20'
               }`}
               onClick={scrollToTop}
             >
               Gallery
+            </Link>
+            <Link 
+              to="/political-campaigns" 
+              className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive('/political-campaigns') ? 'bg-white text-orange-600' : 'text-white hover:bg-white hover:bg-opacity-20'
+              }`}
+              onClick={scrollToTop}
+            >
+              Political Campaigns
             </Link>
             <Link 
               to="/digital-marketing" 
@@ -218,6 +230,18 @@ const Header: React.FC = () => {
                 }}
               >
                 Gallery
+              </Link>
+              <Link 
+                to="/political-campaigns" 
+                className={`font-medium ${
+                  isActive('/political-campaigns') ? 'text-primary-600' : 'text-gray-700'
+                }`}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
+              >
+                Political Campaigns
               </Link>
               <Link 
                 to="/digital-marketing" 

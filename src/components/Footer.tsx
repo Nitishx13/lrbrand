@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   return (
     <>
-      {/* Sticky Call Button - Left */}
+      {/* Sticky Call Button - Left Bottom */}
       <a 
         href="tel:+919876543210" 
-        className="fixed left-4 top-1/2 transform -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110"
+        className="fixed left-4 bottom-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110"
         title="Call Us"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -15,12 +15,12 @@ const Footer: React.FC = () => {
         </svg>
       </a>
 
-      {/* Sticky WhatsApp Button - Right */}
+      {/* Sticky WhatsApp Button - Right Bottom */}
       <a 
         href="https://wa.me/919876543210" 
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110"
+        className="fixed right-4 bottom-4 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 hover:scale-110"
         title="WhatsApp Us"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
