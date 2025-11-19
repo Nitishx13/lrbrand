@@ -233,7 +233,7 @@ const PoliticalCampaigns: React.FC = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <a 
-              href="https://wa.me/919876543210" 
+              href="https://wa.me/918076971019" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
@@ -244,7 +244,7 @@ const PoliticalCampaigns: React.FC = () => {
               WhatsApp Us
             </a>
             <button className="bg-white text-orange-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors">
-              Call Now: +91 98765 43210
+              Call Now: +91 80769 71019
             </button>
           </div>
         </div>
