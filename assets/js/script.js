@@ -1,4 +1,136 @@
 (function($) {
+    // Scroll-triggered animations
+    function initScrollAnimations() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements with scroll-animate class
+        $('.scroll-animate').each(function() {
+            observer.observe(this);
+        });
+        
+        // Observe service cards
+        $('.service-card').each(function() {
+            observer.observe(this);
+        });
+    }
+    
+    // Smooth scroll for anchor links
+    function initSmoothScroll() {
+        $('a[href^="#"]').on('click', function(e) {
+            const target = $(this.getAttribute('href'));
+            if (target.length) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 80
+                }, 800);
+            }
+        });
+    }
+    
+    // Parallax effect for hero section
+    function initParallax() {
+        $(window).on('scroll', function() {
+            const scrolled = $(this).scrollTop();
+            $('.hero-slide').css('transform', `translateY(${scrolled * 0.5}px)`);
+        });
+    }
+    
+    // Button ripple effect
+    function initRippleEffect() {
+        $('.btn, .theme-btn').on('click', function(e) {
+            const button = $(this);
+            const ripple = $('<span class="ripple"></span>');
+            
+            const buttonRect = button[0].getBoundingClientRect();
+            const size = Math.max(buttonRect.width, buttonRect.height);
+            const x = e.clientX - buttonRect.left - size / 2;
+            const y = e.clientY - buttonRect.top - size / 2;
+            
+            ripple.css({
+                width: size + 'px',
+                height: size + 'px',
+                left: x + 'px',
+                top: y + 'px'
+            });
+            
+            button.append(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    }
+    
+    // Form validation enhancement
+    function initFormValidation() {
+        $('input, textarea, select').on('blur', function() {
+            const field = $(this);
+            const value = field.val().trim();
+            
+            if (value === '') {
+                field.addClass('error');
+                field.removeClass('valid');
+            } else {
+                field.addClass('valid');
+                field.removeClass('error');
+            }
+        });
+        
+        $('input, textarea, select').on('focus', function() {
+            $(this).removeClass('error');
+        });
+    }
+    
+    // Loading states for buttons
+    function initLoadingStates() {
+        $('.btn[data-loading]').on('click', function() {
+            const button = $(this);
+            const originalText = button.html();
+            const loadingText = button.data('loading');
+            
+            button.addClass('loading').html(loadingText).prop('disabled', true);
+            
+            setTimeout(() => {
+                button.removeClass('loading').html(originalText).prop('disabled', false);
+            }, 2000);
+        });
+    }
+    
+    // Initialize hero slider when document is ready
+    $(document).ready(function() {
+        if ($('.hero-slider').length > 0) {
+            initHeroSlider();
+        }
+        
+        // Initialize scroll animations
+        initScrollAnimations();
+        
+        // Initialize smooth scroll
+        initSmoothScroll();
+        
+        // Initialize parallax
+        initParallax();
+        
+        // Initialize ripple effects
+        initRippleEffect();
+        
+        // Initialize form validation
+        initFormValidation();
+        
+        // Initialize loading states
+        initLoadingStates();
+    });
 	
 	"use strict";
 

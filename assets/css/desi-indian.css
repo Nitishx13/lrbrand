@@ -1,0 +1,311 @@
+/* Desi Indian Design Elements */
+
+/* Traditional Indian Pattern Backgrounds */
+.indian-pattern {
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 107, 53, 0.03) 10px, rgba(255, 107, 53, 0.03) 20px),
+        repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(247, 147, 30, 0.03) 10px, rgba(247, 147, 30, 0.03) 20px);
+}
+
+.mehendi-pattern {
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(247, 147, 30, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 20%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
+}
+
+/* Indian Border Styles */
+.indian-border {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #ff6b35, #f7931e) border-box;
+    border-radius: 8px;
+}
+
+/* Traditional Indian Typography */
+.indian-heading {
+    font-family: 'Crimson Text', serif;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(255, 107, 53, 0.2);
+}
+
+/* Decorative Elements */
+.indian-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff6b35, #f7931e, transparent);
+    margin: 30px 0;
+}
+
+.indian-corner::before,
+.indian-corner::after {
+    content: "❈";
+    color: var(--primary-color);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/* Card Enhancements */
+.indian-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.indian-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b35, #f7931e);
+}
+
+.indian-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.25);
+}
+
+/* Button Enhancements */
+.indian-btn {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.indian-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f7931e, #ff6b35);
+    transition: left 0.3s ease;
+}
+
+.indian-btn:hover::before {
+    left: 0;
+}
+
+.indian-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icon Enhancements */
+.indian-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.indian-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+/* Section Backgrounds */
+.indian-section {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(247, 147, 30, 0.05));
+    padding: 80px 0;
+}
+
+.indian-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 107, 53, 0.02) 35px, rgba(255, 107, 53, 0.02) 70px);
+    pointer-events: none;
+}
+
+/* Navigation Enhancements */
+.main-menu .navigation > li > a {
+    position: relative;
+}
+
+.main-menu .navigation > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b35, #f7931e);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.main-menu .navigation > li:hover > a::after,
+.main-menu .navigation > li.current > a::after {
+    width: 80%;
+}
+
+/* Footer Enhancements */
+.main-footer {
+    position: relative;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+.main-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b35, #f7931e, #ff6b35);
+}
+
+/* Gallery Enhancements */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.9), rgba(247, 147, 30, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Form Enhancements */
+.form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+/* Testimonial Enhancements */
+.testimonial-box {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+}
+
+.testimonial-box::before {
+    content: """;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 60px;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+/* Pricing Table Enhancements */
+.pricing-table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
+    transition: all 0.3s ease;
+}
+
+.pricing-table:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.25);
+}
+
+.pricing-table .header {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .indian-card {
+        margin-bottom: 20px;
+    }
+    
+    .indian-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .indian-section {
+        padding: 60px 0;
+    }
+}
+
+/* Animation Classes */
+@keyframes indianPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.indian-pulse {
+    animation: indianPulse 2s infinite;
+}
+
+@keyframes indianShine {
+    0% {
+        background-position: -200% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.indian-shine {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background-size: 200% 100%;
+    animation: indianShine 3s infinite;
+}
