@@ -13,7 +13,7 @@ const Industrial: React.FC = () => {
           {/* Hero Image */}
           <div className="mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=400&fit=crop" 
+              src="/assets/main-slider/image-2.jpg" 
               alt="Industrial Uniforms" 
               className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
             />
@@ -50,21 +50,21 @@ const Industrial: React.FC = () => {
             <h2 className="text-2xl font-bold mb-6 text-center">Our Industrial Collection</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Safety Vests" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-5.jpg" alt="Safety Vests" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Safety Vests</h3>
                   <p className="text-sm text-gray-600">High-visibility vests for maximum safety</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=300&fit=crop" alt="Work Coveralls" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-6.jpg" alt="Work Coveralls" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Work Coveralls</h3>
                   <p className="text-sm text-gray-600">Full-body protection for industrial workers</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop" alt="Safety Jackets" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-7.jpg" alt="Safety Jackets" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Safety Jackets</h3>
                   <p className="text-sm text-gray-600">Weather-resistant protective jackets</p>
@@ -111,7 +111,7 @@ const Industrial: React.FC = () => {
           <div className="bg-orange-50 rounded-lg p-8 mb-12">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-orange-200">
-                <img src="/facebook-profile.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
+                <img src="/assets/resource/image-1.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="text-lg italic text-gray-700 mb-4">

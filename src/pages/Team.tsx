@@ -13,7 +13,7 @@ const Team: React.FC = () => {
             <div className="text-center mb-8">
               <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-orange-100 shadow-lg">
                 <img 
-                  src="/facebook-profile.jpg" 
+                  src="/assets/resource/image-1.jpg" 
                   alt="Er. Sunil Lodhi Rajput" 
                   className="w-full h-full object-cover"
                 />

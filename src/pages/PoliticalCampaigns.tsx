@@ -4,84 +4,84 @@ import { Link } from 'react-router-dom';
 const PoliticalCampaigns: React.FC = () => {
   const campaignProducts = [
     {
-      src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-18.jpg",
       title: "Political Banners",
       description: "Large-format political banners for rallies and events",
       minOrder: "100 pieces",
       price: "₹150 - ₹500"
     },
     {
-      src: "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-19.jpg",
       title: "Campaign Posters",
       description: "High-quality campaign posters for political promotion",
       minOrder: "200 pieces",
       price: "₹50 - ₹200"
     },
     {
-      src: "https://images.unsplash.com/photo-1517048678831-a65b137fb361?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-20.jpg",
       title: "Political Caps",
       description: "Custom branded caps for political campaign teams",
       minOrder: "50 pieces",
       price: "₹80 - ₹250"
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-21.jpg",
       title: "Campaign Materials",
       description: "Complete political campaign material packages",
       minOrder: "Custom",
       price: "₹5,000+"
     },
     {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-22.jpg",
       title: "Political Badges",
       description: "Custom political badges and pins for supporters",
       minOrder: "100 pieces",
       price: "₹30 - ₹100"
     },
     {
-      src: "https://images.unsplash.com/photo-1501183638990-5bf7d516ad42?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-23.jpg",
       title: "Campaign Stickers",
       description: "Durable political stickers and decals for promotion",
       minOrder: "500 pieces",
       price: "₹10 - ₹50"
     },
     {
-      src: "https://images.unsplash.com/photo-1503376780353-57e69d71211a?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-24.jpg",
       title: "Political Flags",
       description: "Custom political flags and banners for rallies",
       minOrder: "25 pieces",
       price: "₹200 - ₹800"
     },
     {
-      src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-25.jpg",
       title: "Campaign Tote Bags",
       description: "Branded tote bags for political campaign distribution",
       minOrder: "100 pieces",
       price: "₹120 - ₹300"
     },
     {
-      src: "https://images.unsplash.com/photo-1515372039734-b8f2a20c3f76?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-26.jpg",
       title: "Political Merchandise",
       description: "Complete political merchandise solutions package",
       minOrder: "Custom",
       price: "₹10,000+"
     },
     {
-      src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-27.jpg",
       title: "Custom Masks",
       description: "Branded face masks for political campaigns",
       minOrder: "100 pieces",
       price: "₹40 - ₹150"
     },
     {
-      src: "https://images.unsplash.com/photo-1562157873-81897a0d6d2e?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-28.jpg",
       title: "Political T-Shirts",
       description: "Custom printed t-shirts for political campaigns",
       minOrder: "50 pieces",
       price: "₹150 - ₹400"
     },
     {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a141a773c4?w=400&h=300&fit=crop",
+      src: "/assets/resource/image-29.jpg",
       title: "Custom Hoodies",
       description: "Branded hoodies for political campaign teams",
       minOrder: "25 pieces",

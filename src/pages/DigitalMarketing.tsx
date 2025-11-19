@@ -211,10 +211,10 @@ const DigitalMarketing: React.FC = () => {
               </ul>
               <div className="flex items-center space-x-4">
                 <div className="flex -space-x-2">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="/assets/resource/image-14.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="/assets/resource/image-15.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="/assets/resource/image-16.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="/assets/resource/image-17.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Trusted by <span className="font-bold text-purple-600">500+</span> Happy Clients</p>
@@ -222,7 +222,7 @@ const DigitalMarketing: React.FC = () => {
               </div>
             </div>
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Digital Marketing Team" className="rounded-lg shadow-lg w-full" />
+              <img src="/assets/main-slider/image-5.jpg" alt="Digital Marketing Team" className="rounded-lg shadow-lg w-full" />
               <div className="absolute -bottom-4 -right-4 bg-purple-600 text-white p-6 rounded-lg shadow-xl">
                 <h3 className="text-3xl font-bold">10+</h3>
                 <p className="text-sm">Years of Digital Excellence</p>

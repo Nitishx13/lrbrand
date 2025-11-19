@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-orange-100 shadow-lg">
-                <img src="/facebook-profile.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
+                <img src="/assets/resource/image-1.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
               </div>
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl font-bold mb-2 text-gray-800">Er. Sunil Lodhi Rajput</h2>

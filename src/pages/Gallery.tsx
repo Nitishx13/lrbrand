@@ -3,65 +3,65 @@ import React from 'react';
 const Gallery: React.FC = () => {
   const galleryImages = [
     {
-      src: "/facebook-profile.jpg",
+      src: "/assets/resource/image-1.jpg",
       title: "Our Founder - Er. Sunil Lodhi Rajput",
       description: "Meet the visionary behind LR Brand India",
       facebook: true
     },
     {
-      src: "https://images.unsplash.com/photo-1521572163474-6814f9a9bf64?w=400&h=300&fit=crop",
+      src: "/assets/main-slider/image-1.jpg",
+      title: "Corporate Uniforms",
+      description: "Professional corporate uniforms for businesses"
+    },
+    {
+      src: "/assets/main-slider/image-2.jpg",
+      title: "Industrial Uniforms",
+      description: "Durable industrial workwear solutions"
+    },
+    {
+      src: "/assets/main-slider/image-3.jpg",
+      title: "School Uniforms",
+      description: "Quality school uniforms for educational institutions"
+    },
+    {
+      src: "/assets/main-slider/image-4.jpg",
+      title: "Hospital Uniforms",
+      description: "Medical and healthcare professional uniforms"
+    },
+    {
+      src: "/assets/main-slider/image-5.jpg",
+      title: "Security Uniforms",
+      description: "Professional security personnel uniforms"
+    },
+    {
+      src: "/assets/resource/image-2.jpg",
+      title: "Hotel Uniforms",
+      description: "Hospitality industry uniforms"
+    },
+    {
+      src: "/assets/resource/image-3.jpg",
+      title: "Sports Uniforms",
+      description: "Athletic and sports team uniforms"
+    },
+    {
+      src: "/assets/resource/image-4.jpg",
       title: "Custom T-Shirts",
-      description: "High-quality custom printed t-shirts for all occasions"
+      description: "Custom printed t-shirts for events"
     },
     {
-      src: "https://images.unsplash.com/photo-1562157873-81897a0d6d2e?w=400&h=300&fit=crop",
-      title: "Political Campaign T-Shirts",
-      description: "Professional political campaign merchandise and apparel"
+      src: "/assets/resource/image-5.jpg",
+      title: "Political Campaign Materials",
+      description: "Political campaign merchandise"
     },
     {
-      src: "https://images.unsplash.com/photo-1516829948807-7cc98ce13c0f?w=400&h=300&fit=crop",
-      title: "Party T-Shirts",
-      description: "Custom party t-shirts for events and celebrations"
+      src: "/assets/resource/image-6.jpg",
+      title: "Workwear Solutions",
+      description: "Professional workwear for various industries"
     },
     {
-      src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop",
-      title: "Sports Team T-Shirts",
-      description: "Professional sports team apparel and jerseys"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&h=300&fit=crop",
-      title: "Corporate T-Shirts",
-      description: "Branded corporate t-shirts for team building"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop",
-      title: "Political Banners",
-      description: "Professional political campaign banners and flags"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=400&h=300&fit=crop",
-      title: "Campaign Posters",
-      description: "High-quality political campaign posters and signage"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop",
-      title: "Paint Products",
-      description: "Premium quality paints for all surfaces"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1589929776498-a2847d5d9b5f?w=400&h=300&fit=crop",
-      title: "Wall Paints",
-      description: "Durable wall paints for homes and offices"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1589929776498-a2847d5d9b5f?w=400&h=300&fit=crop",
-      title: "Industrial Paints",
-      description: "Heavy-duty paints for industrial applications"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-      title: "Paint Accessories",
-      description: "Professional painting tools and accessories"
+      src: "/assets/resource/image-7.jpg",
+      title: "Safety Uniforms",
+      description: "High-visibility safety uniforms"
     },
     {
       src: "https://images.unsplash.com/photo-1517048678831-a65b137fb361?w=400&h=300&fit=crop",
@@ -161,7 +161,7 @@ const Gallery: React.FC = () => {
         <h1 className="text-4xl font-bold text-center mb-8">Our Gallery</h1>
         <div className="max-w-6xl mx-auto">
           <p className="text-lg text-gray-600 mb-12 text-center">
-            Browse through our extensive collection of custom t-shirts, paint products, and political campaign materials. 
+            Browse through our extensive collection of professional uniforms and custom apparel. 
             Connect with us on Facebook for more updates and custom solutions!
           </p>
           
@@ -188,10 +188,10 @@ const Gallery: React.FC = () => {
           </div>
           
           <div className="text-center mt-12 bg-orange-50 rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Need Custom Products?</h2>
+            <h2 className="text-2xl font-bold mb-4">Need Custom Uniforms?</h2>
             <p className="text-gray-600 mb-6">
-              Contact us today to discuss your custom t-shirts, paint requirements, or political campaign materials. 
-              We provide high-quality products for all your needs.
+              Contact us today to discuss your custom uniform requirements. 
+              We provide high-quality uniform solutions for all industries.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <a 
@@ -205,9 +205,12 @@ const Gallery: React.FC = () => {
                 </svg>
                 Follow on Facebook
               </a>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <a 
+                href="tel:+918076971019" 
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              >
                 Get Quote
-              </button>
+              </a>
             </div>
           </div>
         </div>

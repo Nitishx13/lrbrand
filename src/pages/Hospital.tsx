@@ -13,7 +13,7 @@ const Hospital: React.FC = () => {
           {/* Hero Image */}
           <div className="mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=400&fit=crop" 
+              src="/assets/main-slider/image-4.jpg" 
               alt="Hospital Uniforms" 
               className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
             />
@@ -50,21 +50,21 @@ const Hospital: React.FC = () => {
             <h2 className="text-2xl font-bold mb-6 text-center">Our Healthcare Collection</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Doctor Coats" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-11.jpg" alt="Doctor Coats" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Doctor Coats</h3>
                   <p className="text-sm text-gray-600">Professional lab coats for medical practitioners</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Nurse Uniforms" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-12.jpg" alt="Nurse Uniforms" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Nurse Uniforms</h3>
                   <p className="text-sm text-gray-600">Comfortable scrubs for nursing staff</p>
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1551190832-a9330c958a3f?w=400&h=300&fit=crop" alt="Support Staff" className="w-full h-48 object-cover" />
+                <img src="/assets/resource/image-13.jpg" alt="Support Staff" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-semibold mb-2">Support Staff</h3>
                   <p className="text-sm text-gray-600">Practical uniforms for hospital support teams</p>
@@ -111,7 +111,7 @@ const Hospital: React.FC = () => {
           <div className="bg-orange-50 rounded-lg p-8 mb-12">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-orange-200">
-                <img src="/facebook-profile.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
+                <img src="/assets/resource/image-1.jpg" alt="Er. Sunil Lodhi Rajput" className="w-full h-full object-cover" />
               </div>
               <div>
                 <p className="text-lg italic text-gray-700 mb-4">
