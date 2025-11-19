@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Home: React.FC = () => {
   return (
     <>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       {/* Search Popup */}
       <div id="search-popup" className="search-popup fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
         <div className="close-search absolute top-4 right-4 bg-orange-500 text-white p-2 rounded cursor-pointer hover:bg-orange-600">
@@ -27,14 +28,60 @@ const Home: React.FC = () => {
       </div>
 
       {/* Banner Section */}
-      <section className="banner-section relative h-screen flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-700 text-white">
-        <div className="banner-content text-center px-4">
-          <h1 className="banner-headline text-5xl md:text-7xl font-bold mb-4">LR Brand India</h1>
-          <p className="banner-subtitle text-xl md:text-3xl mb-8">Leading Uniform Manufacturer in Delhi NCR</p>
+      <section className="banner-section relative h-screen flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-600/90 to-orange-800/90"></div>
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&h=1080&fit=crop" alt="Professional Business Team" className="w-full h-full object-cover" />
+        </div>
+        <div className="banner-content text-center px-4 relative z-10">
+          <h1 className="banner-headline text-5xl md:text-7xl font-bold mb-4 text-white">LR Brand India</h1>
+          <p className="banner-subtitle text-xl md:text-3xl mb-8 text-white">Leading Uniform Manufacturer in Delhi NCR</p>
           <div className="banner-link">
-            <Link to="/contact" className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+            <Link to="/contact" className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
+              <i className="fas fa-phone-alt"></i>
               Get a Quote
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Showcase Section */}
+      <section className="hero-showcase py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">Professional Uniforms for Modern Professionals</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Transform your team's appearance with our premium quality uniforms designed for confidence and professionalism
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative group">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=500&fit=crop" alt="Corporate Professional" className="w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Corporate Excellence</h3>
+                  <p className="text-sm">Professional business attire</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Industrial Worker" className="w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Industrial Strength</h3>
+                  <p className="text-sm">Durable workwear solutions</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=500&fit=crop" alt="Service Professional" className="w-full h-80 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Service Excellence</h3>
+                  <p className="text-sm">Customer service uniforms</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -44,7 +91,9 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="section-header text-center mb-12 relative">
             <div className="sec-title-dec absolute left-1/2 transform -translate-x-1/2 -top-4">
-              <img src="/assets/images/shape/shape-1.png" alt="Decorative Element" className="w-8 h-8" />
+              <div className="w-8 h-8 bg-orange-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-star text-orange-500 text-sm"></i>
+              </div>
             </div>
             <div className="badge inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full mb-4">
               <span className="badge-text font-semibold">Our Services</span>
@@ -71,9 +120,9 @@ const Home: React.FC = () => {
                   Professional corporate uniforms that enhance your brand identity and employee confidence.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Custom Design Options</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Premium Fabric Quality</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Brand Integration</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Custom Design Options</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Premium Fabric Quality</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Brand Integration</li>
                 </ul>
                 <Link to="/corporate" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -95,9 +144,9 @@ const Home: React.FC = () => {
                   Comfortable and durable school uniforms designed for students of all age groups.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Comfortable Materials</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Durable Construction</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Age-Appropriate Designs</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Comfortable Materials</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Durable Construction</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Age-Appropriate Designs</li>
                 </ul>
                 <Link to="/school" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -119,9 +168,9 @@ const Home: React.FC = () => {
                   Safety-compliant industrial uniforms designed for various manufacturing and production environments.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Safety Standards</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Heavy-Duty Materials</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Protective Features</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Safety Standards</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Heavy-Duty Materials</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Protective Features</li>
                 </ul>
                 <Link to="/industrial" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -143,9 +192,9 @@ const Home: React.FC = () => {
                   Hygienic and comfortable medical uniforms for healthcare professionals and staff.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Antibacterial Fabric</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Easy to Clean</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Professional Look</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Antibacterial Fabric</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Easy to Clean</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Professional Look</li>
                 </ul>
                 <Link to="/hospital" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -167,9 +216,9 @@ const Home: React.FC = () => {
                   Elegant hotel uniforms that reflect luxury and professionalism for hospitality staff.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Premium Fabrics</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Elegant Designs</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Brand Consistency</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Premium Fabrics</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Elegant Designs</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Brand Consistency</li>
                 </ul>
                 <Link to="/contact" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -191,9 +240,9 @@ const Home: React.FC = () => {
                   Professional security uniforms designed for authority, visibility, and practical functionality.
                 </p>
                 <ul className="service-features text-sm text-gray-500 mb-6 space-y-2">
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />High Visibility</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Professional Design</li>
-                  <li><img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-2" />Functional Features</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>High Visibility</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Professional Design</li>
+                  <li><i className="fas fa-check text-orange-500 mr-2"></i>Functional Features</li>
                 </ul>
                 <Link to="/contact" className="inline-flex items-center bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition-colors">
                   <i className="fas fa-arrow-right mr-2"></i>
@@ -220,10 +269,10 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <img src="/assets/images/resource/image-6.jpg" alt="Professional Uniform Manufacturing" className="rounded-lg shadow-lg w-full h-64 object-cover" />
+                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300&h=400&fit=crop" alt="Professional Uniform Manufacturing" className="rounded-lg shadow-lg w-full h-64 object-cover" />
                 </div>
                 <div className="space-y-4 mt-8">
-                  <img src="/assets/images/resource/image-7.jpg" alt="Quality Uniform Production" className="rounded-lg shadow-lg w-full h-64 object-cover" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop" alt="Quality Uniform Production" className="rounded-lg shadow-lg w-full h-64 object-cover" />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-orange-500 text-white p-6 rounded-lg shadow-xl">
@@ -234,7 +283,9 @@ const Home: React.FC = () => {
             <div>
               <div className="mb-6 relative">
                 <div className="sec-title-dec absolute left-0 -top-4">
-                  <img src="/assets/images/shape/shape-1.png" alt="Decorative Element" className="w-6 h-6" />
+                  <div className="w-6 h-6 bg-orange-200 rounded-full flex items-center justify-center">
+                    <i className="fas fa-star text-orange-500 text-xs"></i>
+                  </div>
                 </div>
                 <span className="text-orange-600 font-semibold">About LR Brand India</span>
               </div>
@@ -246,33 +297,109 @@ const Home: React.FC = () => {
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center">
-                  <img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-3" />
+                  <i className="fas fa-check text-orange-500 mr-3"></i>
                   Premium Quality Fabrics & Materials
                 </li>
                 <li className="flex items-center">
-                  <img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-3" />
+                  <i className="fas fa-check text-orange-500 mr-3"></i>
                   Custom Design & Tailoring Services
                 </li>
                 <li className="flex items-center">
-                  <img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-3" />
+                  <i className="fas fa-check text-orange-500 mr-3"></i>
                   Bulk Orders with Fast Turnaround
                 </li>
                 <li className="flex items-center">
-                  <img src="https://img.icons8.com/fluency/20/000000/checkmark.png" alt="Checkmark Icon" className="mr-3" />
+                  <i className="fas fa-check text-orange-500 mr-3"></i>
                   Competitive Pricing & On-Time Delivery
                 </li>
               </ul>
               <div className="flex items-center space-x-4">
                 <div className="flex -space-x-2">
-                  <img src="/assets/images/resource/thumb-1.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="/assets/images/resource/thumb-2.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="/assets/images/resource/thumb-3.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
-                  <img src="/assets/images/resource/news-1.jpg" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
+                  <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=40&h=40&fit=crop&crop=face" alt="Client" className="w-10 h-10 rounded-full border-2 border-white" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Trusted by <span className="font-bold text-orange-600">5000+</span> Happy Clients</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="sec-title-dec absolute left-1/2 transform -translate-x-1/2 -top-4">
+              <div className="w-8 h-8 bg-orange-200 rounded-full flex items-center justify-center">
+                <i className="fas fa-star text-orange-500 text-sm"></i>
+              </div>
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">What Our Clients Say</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Trusted by leading organizations across India for premium uniform solutions
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+              <div className="flex items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face" alt="Client" className="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 className="font-semibold">Rajesh Kumar</h4>
+                  <p className="text-sm text-gray-600">CEO, Tech Solutions</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+              </div>
+              <p className="text-gray-700">
+                "LR Brand India delivered exceptional corporate uniforms that perfectly represent our brand. The quality and attention to detail is outstanding."
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+              <div className="flex items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Client" className="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 className="font-semibold">Amit Sharma</h4>
+                  <p className="text-sm text-gray-600">Operations Manager, Industrial Corp</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+              </div>
+              <p className="text-gray-700">
+                "The industrial uniforms are durable and comfortable. Our team feels safe and professional. Excellent service and timely delivery."
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+              <div className="flex items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=60&h=60&fit=crop&crop=face" alt="Client" className="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 className="font-semibold">Vikram Malhotra</h4>
+                  <p className="text-sm text-gray-600">Director, Hospitality Group</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+                <i className="fas fa-star text-yellow-400"></i>
+              </div>
+              <p className="text-gray-700">
+                "Beautiful hotel uniforms that enhance our brand image. The staff feels confident and guests notice the difference. Highly recommended!"
+              </p>
             </div>
           </div>
         </div>

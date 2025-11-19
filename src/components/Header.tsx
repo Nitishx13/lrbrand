@@ -64,6 +64,14 @@ const Header: React.FC = () => {
               Gallery
             </Link>
             <Link 
+              to="/digital-marketing" 
+              className={`font-medium transition-colors ${
+                isActive('/digital-marketing') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
+              }`}
+            >
+              Digital Marketing
+            </Link>
+            <Link 
               to="/team" 
               className={`font-medium transition-colors ${
                 isActive('/team') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
@@ -176,6 +184,15 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Gallery
+              </Link>
+              <Link 
+                to="/digital-marketing" 
+                className={`font-medium ${
+                  isActive('/digital-marketing') ? 'text-primary-600' : 'text-gray-700'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Digital Marketing
               </Link>
               <Link 
                 to="/team" 

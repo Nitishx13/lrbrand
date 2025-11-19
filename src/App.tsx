@@ -11,6 +11,7 @@ import School from './pages/School';
 import Hospital from './pages/Hospital';
 import Gallery from './pages/Gallery';
 import Team from './pages/Team';
+import DigitalMarketing from './pages/DigitalMarketing';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/school" element={<School />} />
             <Route path="/hospital" element={<Hospital />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/team" element={<Team />} />
           </Routes>
         </main>
