@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "LR Brand India - Professional Signage Solutions",
   "scripts": {
-    "build": "echo 'Build completed'",
+    "build": "mkdir -p public && cp *.php public/ && cp -r assets public/ && cp -r css public/ && cp -r js public/ && cp -r images public/ && cp *.svg public/ && echo 'Build completed'",
     "start": "echo 'Starting server'"
   },
   "dependencies": {},
