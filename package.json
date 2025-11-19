@@ -1,0 +1,11 @@
+{
+  "name": "lrbrand",
+  "version": "1.0.0",
+  "description": "LR Brand India - Professional Signage Solutions",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "start": "echo 'Starting server'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
