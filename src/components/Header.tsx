@@ -7,11 +7,18 @@ const Header: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={scrollToTop}>
             <img 
               src="/logo.svg" 
               alt="LR Brand India" 
@@ -25,6 +32,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               Home
             </Link>
@@ -33,6 +41,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/about') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               About
             </Link>
@@ -41,16 +50,16 @@ const Header: React.FC = () => {
                 Services
               </button>
               <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <Link to="/corporate" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+                <Link to="/corporate" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
                   Corporate Uniforms
                 </Link>
-                <Link to="/industrial" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+                <Link to="/industrial" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
                   Industrial Uniforms
                 </Link>
-                <Link to="/school" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+                <Link to="/school" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
                   School Uniforms
                 </Link>
-                <Link to="/hospital" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600">
+                <Link to="/hospital" className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600" onClick={scrollToTop}>
                   Hospital Uniforms
                 </Link>
               </div>
@@ -60,6 +69,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/gallery') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               Gallery
             </Link>
@@ -68,6 +78,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/digital-marketing') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               Digital Marketing
             </Link>
@@ -76,6 +87,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/team') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               Team
             </Link>
@@ -84,6 +96,7 @@ const Header: React.FC = () => {
               className={`font-medium transition-colors ${
                 isActive('/contact') ? 'text-primary-600' : 'text-gray-700 hover:text-primary-600'
               }`}
+              onClick={scrollToTop}
             >
               Contact
             </Link>
@@ -135,7 +148,10 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Home
               </Link>
@@ -144,35 +160,50 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/about') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 About
               </Link>
               <Link 
                 to="/corporate" 
                 className="font-medium text-gray-700"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Corporate Uniforms
               </Link>
               <Link 
                 to="/industrial" 
                 className="font-medium text-gray-700"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Industrial Uniforms
               </Link>
               <Link 
                 to="/school" 
                 className="font-medium text-gray-700"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 School Uniforms
               </Link>
               <Link 
                 to="/hospital" 
                 className="font-medium text-gray-700"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Hospital Uniforms
               </Link>
@@ -181,7 +212,10 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/gallery') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Gallery
               </Link>
@@ -190,7 +224,10 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/digital-marketing') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Digital Marketing
               </Link>
@@ -199,7 +236,10 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/team') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Team
               </Link>
@@ -208,7 +248,10 @@ const Header: React.FC = () => {
                 className={`font-medium ${
                   isActive('/contact') ? 'text-primary-600' : 'text-gray-700'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  scrollToTop();
+                }}
               >
                 Contact
               </Link>
