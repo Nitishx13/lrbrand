@@ -11,11 +11,28 @@ const Team: React.FC = () => {
           
           <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
             <div className="text-center mb-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-white text-4xl font-bold">SLR</span>
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-4 border-orange-100 shadow-lg">
+                <img 
+                  src="/facebook-profile.jpg" 
+                  alt="Er. Sunil Lodhi Rajput" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h2 className="text-3xl font-bold mb-2 text-gray-800">Er. Sunil Lodhi Rajput</h2>
               <p className="text-orange-600 font-semibold text-lg">Founder & Managing Director</p>
+              <div className="mt-4 flex justify-center space-x-3">
+                <a 
+                  href="https://www.facebook.com/er.sunil.lodhi.rajput" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-700 transition-colors"
+                  title="Facebook Profile"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+              </div>
             </div>
             
             <div className="space-y-6">
